@@ -9,4 +9,4 @@ const clearInterval= setInterval(function(){
     for(let letter of letters){
         letter.style.color=randomColor()
     }
-},1000)
+},2000)
