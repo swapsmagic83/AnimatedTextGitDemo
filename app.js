@@ -4,8 +4,9 @@ function randomColor(){
     const b= Math.floor(Math.random()*256)
     return `rgb(${r},${g},${b})`
 }
-const letters =document.querySelector('.letter')
+const letters =document.querySelectorAll('.letter')
 const clearInterval= setInterval(function(){
+    console.log(letters)
     for(let letter of letters){
         letter.style.color=randomColor()
     }
